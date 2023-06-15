@@ -1,0 +1,14 @@
+version: "3.4"
+name: "nuxt-modal"
+services:
+  app:
+    container_name: "nuxt-modal-app"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runner
+    ports:
+      - ${APP_PORT:-3000}:${APP_PORT:-3000}
+      - ${WEBSOCKET_PORT:-24678}:${WEBSOCKET_PORT:-24678}
+    volumes:
+      - ./:/app
