@@ -1,9 +1,4 @@
-import {
-  defineNuxtModule,
-  // createResolver,
-  addComponent,
-  addImports,
-} from "@nuxt/kit";
+import { defineNuxtModule, addComponent, addImports } from "@nuxt/kit";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -14,10 +9,8 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: "nuxtModal",
   },
   defaults: {},
-  setup(_options, _nuxt) {
-    // const { resolve } = createResolver(import.meta.url);
-
-    // nuxt.options.css.unshift("@henrotaymcorp/vue-modal/dist/style.css");
+  setup(_options, nuxt) {
+    nuxt.options.css.unshift("@henrotaymcorp/vue-modal/dist/style.css");
 
     addComponent({
       name: "StylelessModal",
