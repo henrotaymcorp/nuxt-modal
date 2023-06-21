@@ -15,10 +15,14 @@ export default defineNuxtConfig({
   modules: [
     '@henrotaymcorp/nuxt-modal'
   ],
-  nuxtModal: {
-    // @TODO
-  }
+  nuxtModal: {}
 })
+```
+
+Add CSS package to your main.css (or whatever file you use to import tailwind directives)
+
+```css
+@import url("@henrotaymcorp/vue-modal/dist/style.css");
 ```
 
 That's it! You can now use `nuxt-modal` in your Nuxt app ✨
