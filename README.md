@@ -1,4 +1,4 @@
-#nuxt-modal
+# nuxt-modal
 
 A simple package to manage modals.
 
