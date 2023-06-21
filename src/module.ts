@@ -17,7 +17,7 @@ export default defineNuxtModule<ModuleOptions>({
   setup(_options, nuxt) {
     // const { resolve } = createResolver(import.meta.url);
 
-    nuxt.options.css.push("@henrotaymcorp/vue-modal/dist/style.css");
+    nuxt.options.css.unshift("@henrotaymcorp/vue-modal/dist/style.css");
 
     addComponent({
       name: "StylelessModal",
