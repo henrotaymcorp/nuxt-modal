@@ -1,6 +1,6 @@
 {
   "name": "@henrotaymcorp/nuxt-modal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple package to manage modals.",
   "files": [
     "dist"

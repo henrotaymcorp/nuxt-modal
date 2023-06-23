@@ -1,5 +1,11 @@
 # @henrotaymcorp/nuxt-modal
 
+## 0.0.4
+
+### Patch Changes
+
+- ec383e3: Autoimporting css is working if css is unshifted to nuxt config.
+
 ## 0.0.3
 
 ### Patch Changes
