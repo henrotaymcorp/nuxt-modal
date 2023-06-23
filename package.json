@@ -64,7 +64,7 @@
     "vue-tsc": "^1.4.4"
   },
   "dependencies": {
-    "@henrotaymcorp/vue-modal": "^0.0.2",
+    "@henrotaymcorp/vue-modal": "^0.0.5",
     "@nuxt/kit": "^3.4.2"
   }
 }

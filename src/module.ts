@@ -1,4 +1,10 @@
-import { defineNuxtModule, addComponent, addImports } from "@nuxt/kit";
+import {
+  defineNuxtModule,
+  addComponent,
+  addImports,
+  createResolver,
+  addPlugin,
+} from "@nuxt/kit";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -10,6 +16,8 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {},
   setup(_options, nuxt) {
+    const { resolve } = createResolver(import.meta.url);
+
     nuxt.options.css.unshift("@henrotaymcorp/vue-modal/dist/style.css");
 
     addComponent({
@@ -40,5 +48,12 @@ export default defineNuxtModule<ModuleOptions>({
       name: "useModal",
       from: "@henrotaymcorp/vue-modal",
     });
+
+    addImports({
+      name: "useModalContainer",
+      from: "@henrotaymcorp/vue-modal",
+    });
+
+    addPlugin(resolve("./runtime/plugins/modalPlugin"));
   },
 });
