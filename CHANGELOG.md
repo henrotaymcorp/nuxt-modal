@@ -1,5 +1,11 @@
 # @henrotaymcorp/nuxt-modal
 
+## 0.0.5
+
+### Patch Changes
+
+- e27f06d: Using global modalContainer defined by vue package.
+
 ## 0.0.4
 
 ### Patch Changes
